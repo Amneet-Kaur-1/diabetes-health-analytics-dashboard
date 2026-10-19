@@ -10,6 +10,12 @@ An interactive machine learning dashboard built with Python and Streamlit using 
 
 Explore diabetes health indicators, compare machine learning models, review evaluation metrics, and try the prediction demo.
 
+<img width="719" height="284" alt="image" src="https://github.com/user-attachments/assets/ecbaf229-fb2b-4334-9874-e5bb231aa423" />
+
+<img width="356" height="234" alt="image" src="https://github.com/user-attachments/assets/eb4a3c0b-11ae-44eb-91bf-f886d9da01c1" />
+
+<img width="509" height="299" alt="image" src="https://github.com/user-attachments/assets/42b7e2cd-505a-49cf-a319-58fb53e4f983" />
+
 
 ## Dataset
 
