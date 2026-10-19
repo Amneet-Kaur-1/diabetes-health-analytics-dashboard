@@ -1,0 +1,22 @@
+
+# Python and virtual environments
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Local secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# VS Code settings
+.vscode/
+
+# Raw datasets
+cdc_diabetes_health_indicators.csv
+data/cdc_diabetes_health_indicators.csv
+
+# Original large model — keep the compressed copy
+diabetes_random_forest.joblib
