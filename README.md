@@ -6,7 +6,7 @@ An interactive machine learning dashboard built with Python and Streamlit using 
 
 ## Live Demo
 
-[**Open the DiaPrit Dashboard →**](https://diabetes-health-analytics-dashboard-hprnvcth4vxmny3cu8eajr.streamlit.app/)
+[**Open the Healora Dashboard →**](https://diabetes-health-analytics-dashboard-hprnvcth4vxmny3cu8eajr.streamlit.app/)
 
 Explore diabetes health indicators, compare machine learning models, review evaluation metrics, and try the prediction demo.
 
