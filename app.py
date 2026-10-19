@@ -31,19 +31,40 @@ page = st.sidebar.radio(
 st.title("Diabetes Health Analytics")
 st.caption("CDC Diabetes Health Indicators | Machine Learning Dashboard")
 
+
 # Dataset location
 DATA_PATH = Path("data/cdc_diabetes_health_indicators.csv")
+UCI_DATA_URL = "https://archive.ics.uci.edu/static/public/891/data.csv"
 
 # Load the dataset
 @st.cache_data
-def load_data(path):
-    return pd.read_csv(path)
+def load_data():
+    if DATA_PATH.exists():
+        return pd.read_csv(DATA_PATH)
 
-if DATA_PATH.exists():
-    df = load_data(DATA_PATH)
-else:
+    import urllib.request
+    import io
+
+    with urllib.request.urlopen(UCI_DATA_URL, timeout=60) as response:
+        csv_data = response.read()
+
+    df = pd.read_csv(io.BytesIO(csv_data))
+
+    if "Diabetes_binary" not in df.columns:
+        raise ValueError(
+            "Downloaded dataset does not contain "
+            "the expected Diabetes_binary column."
+        )
+
+    return df
+
+
+try:
+    df = load_data()
+except Exception as e:
     df = None
-    st.error(f"Dataset not found at: {DATA_PATH}")
+    st.error(f"Unable to load the diabetes dataset: {e}")
+
 
 
 if page == "Overview":
