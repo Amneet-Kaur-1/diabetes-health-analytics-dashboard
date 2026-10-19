@@ -3,6 +3,16 @@
 
 An interactive machine learning dashboard built with Python and Streamlit using the CDC Diabetes Health Indicators dataset.
 
+## Dataset
+
+**Dataset name:** CDC Diabetes Health Indicators
+
+**Source:** [UCI Machine Learning Repository — CDC Diabetes Health Indicators](https://archive.ics.uci.edu/dataset/891/cdc+diabetes+health+indicators)
+
+The dataset contains 253,680 records and 21 features relating to health indicators, lifestyle, and diabetes status. It is derived from CDC survey data. [Source](https://archive.ics.uci.edu/dataset/891/cdc+diabetes+health+indicators). 
+
+The dataset is used for educational and machine learning research purposes.
+
 ## Project Overview
 
 This project explores health indicators associated with diabetes and demonstrates how machine learning can support data analysis and risk classification.
